@@ -5,7 +5,7 @@ yarn-debug.log*
 yarn-error.log*
 
 # Variáveis de ambiente (manter .env para desenvolvimento)
-# .env
+.env
 
 # Logs
 logs
