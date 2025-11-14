@@ -1,4 +1,4 @@
-const bcrypt = require('bcryptjs');
+const bcrypt = require("bcryptjs");
 
 // Base de dados simulada (em produção usar um banco real)
 const users = [
@@ -18,22 +18,22 @@ const users = [
 
 // Função para gerar hash de senha (útil para criar novos usuários)
 const gerarHashSenha = async (senha) => {
-  return await bcrypt.hash(senha, 10);
+	return await bcrypt.hash(senha, 10);
 };
 
 // Função para encontrar usuário por username
 const encontrarUsuarioPorUsername = (username) => {
-  return users.find(user => user.username === username);
+	return users.find((user) => user.username === username);
 };
 
 // Função para validar senha
 const validarSenha = async (senha, hash) => {
-  return await bcrypt.compare(senha, hash);
+	return await bcrypt.compare(senha, hash);
 };
 
 module.exports = {
-  users,
-  gerarHashSenha,
-  encontrarUsuarioPorUsername,
-  validarSenha
+	users,
+	gerarHashSenha,
+	encontrarUsuarioPorUsername,
+	validarSenha,
 };
