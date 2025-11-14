@@ -11,7 +11,7 @@ const users = [
   {
     id: 2,
     username: 'usuario',
-    password: '$2a$10$5YF5oaT8Z2Zt5VhqI8PQOeE0gLw4Jn8V5qR2Tn9X7Bv3Ac6Df4Ge2', // senha: senha123
+    password: '$2a$10$QzGjguoTwYECtNN5uzMK0ecpPHQC3/Jo8bf8iC668/1l7IttpxHNW', // senha: senha123
     email: 'usuario@teste.com'
   }
 ];
